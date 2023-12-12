@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url(./Norse-Bold.otf) format("opentype");
+}
+
+.logo-background-main {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  opacity: 0.6;
+  height: 100px;
+  position: relative;
+  /* z-index: 1; */
+}
+
+.logo-background p {
+  font-family: "Norse-Bold", sans-serif;
+  color: white;
+  font-size: 58px;
+  font-weight: 900;
+  /* z-index: 2; */
+}
+
+/* .logo-background img {
+  z-index: 2; /* Adjusted the z-index to a positive value 
+} */
+
+.logo-background {
+  /* margin-top: 120px; */
+  /* background-color: aquamarine; */
+  /* height: 100px; */
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  display: flex;
+  width: 100vw;
+  position: absolute;
+  height: 70%;
+  background-color: #f9fafb;
+  margin-top: 120px;
+}
+
+.left-side {
+  /* background-color: aqua; */
+  /* position: relative; */
+  width: clamp(300px, calc(100vw / 3), 500px);
+  background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 100%;
+}
+
+.photoby p {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  transform: translateX(-15%);
+  color: white;
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.photoby a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.right-side {
+  width: clamp(600px, calc((100vw / 3) * 2), 1000px);
+  background-color: chartreuse;
+}
+
+.right-side-top {
+  font-weight: 900;
+  background-color: rgb(249, 249, 249);
+  height: 40%;
+  /* margin: 0; */
+  /* padding: 0; */
+}
+
+.right-side-middle {
+  height: 35%;
+  background-color: white;
+}
+
+.right-side-bottom {
+  height: 25%;
+  background-color: rgb(249, 249, 249);
+}
+
+.right-side-top-main p {
+  margin: 0;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
+}
+
+.right-side-top-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  position: absolute;
+  top: 40px;
+}
+
+/* .right-side-middle-form {
+  display: flex;
+  flex-direction: column;
+} */
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+form label {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: #e5e7eb solid;
+}
+
+form input:focus {
+  border: 2px solid blue;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+form input.error {
+  border: 2px solid #e74c3c; /* Red border for error */
+}
+
+form input:focus {
+  border: 2px solid blue; /* Blue border when focused */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Subtle box-shadow when focused */
+}
+
+button {
+  background-color: #596d48;
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px 40px;
+}
+
+.account {
+  margin-left: 20px;
+}
+
+.account a {
+  text-decoration: none;
+  color: inherit;
+  /* cursor: pointer; */
+  color: #596d48;
+  font-weight: 600;
+}
